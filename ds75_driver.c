@@ -201,7 +201,7 @@ static struct i2c_driver DS75_driver = {
 module_i2c_driver(DS75_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Alberto Liberal <aliberal@arroweurope.com>");
-MODULE_DESCRIPTION("This is a driver that controls several i2c IO expanders");
+MODULE_AUTHOR("JS");
+MODULE_DESCRIPTION("DS75");
 
 
