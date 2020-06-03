@@ -1,0 +1,20 @@
+// enable i2c1, add DS75
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835";
+
+    fragment@0 {
+        target = <&i2c1>;
+        __overlay__ {
+            status = "okay";
+	    #address-cells = <1>;
+	    #size-cells = <0>;
+	    DS75@38 {
+	    	    compatible = "DS75";
+		    reg = <0x38>;
+	    };
+        };
+    };
+};
