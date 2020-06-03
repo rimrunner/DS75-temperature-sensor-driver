@@ -358,5 +358,5 @@ static struct i2c_driver DS75_driver = {
 module_i2c_driver(DS75_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Jari Sihvola");
+MODULE_AUTHOR("J. Sihvola");
 MODULE_DESCRIPTION("DS75 temperature sensor driver");
