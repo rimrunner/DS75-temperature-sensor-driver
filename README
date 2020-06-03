@@ -1,4 +1,3 @@
-# DS75-temperature-sensor-driver
 
 Driver for temperature sensor chip DS75
 Written to be used with Raspberry Pi 3 via GPIO
@@ -7,7 +6,7 @@ This project has been done purely for educational purposes. There is a previousl
 I have not taken a look of that code however, instead I have studied Linux driver tutorials at the general level.
 
 
-# Wirings
+WIRINGS
 
 RPI3-GPIO       DS75 sensor chip
 
@@ -20,7 +19,7 @@ Using GNDs gives an address 000
 Note that additional pull-up resistors are not needed with Raspberry Pi 3
 
 
-# Device tree overlay installation
+DEVICE TREE OVERLAY INSTALLATION
 
 1. Install device-tree-compiler
 2. Add the following line to /boot/config.txt
@@ -29,7 +28,7 @@ dtoverlay=DS75
 dtc -@ -I dts -O dtb -o DS75_overlay.dtbo DS75_overlay.dts
 4. Move .dtbo file to the directory /boot/overlays
 
-# Commands for the driver
+COMMANDS FOR THE DRIVER
 
 NOTE: the register pointer changes every time you change configurations or otherwise write to registers
 
@@ -60,7 +59,7 @@ xX - write value X to the t_os register
 
 aX - switch device address (selected via device's address pins), values 0-7 possible, 0 is default
 
-# Command examples for testing
+COMMAND EXAMPLES FOR TESTING
 
 make
 sudo insmod DS75_driver.ko
