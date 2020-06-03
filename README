@@ -62,6 +62,7 @@ aX - switch device address (selected via device's address pins), values 0-7 poss
 
 # Command examples for testing
 
+make
 sudo insmod DS75_driver.ko
 sudo cat /dev/DS7500
 sudo chmod 666 /dev/DS7500
