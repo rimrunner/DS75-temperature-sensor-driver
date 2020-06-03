@@ -19,6 +19,7 @@ GNDx3-----------ADDRESS PINS x3
 Using GNDs gives an address 000
 Note that additional pull-up resistors are not needed with Raspberry Pi 3
 
+
 # Device tree overlay installation
 
 1. Install device-tree-compiler
